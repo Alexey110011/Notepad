@@ -5,9 +5,159 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(37, 102, 145);
+  padding: 16px;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container {
+  position:relative
+}
+.placeholder {
+  min-width:250px;
+  min-height:150px;
+  font-size: 16px;
+}
+.post {
+  position: relative;
+  max-width:250px;
+  min-height: 150px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  background-image: linear-gradient( lightblue, white);
+  padding: 5px;
+  border:1px solid lightblue;
+  border-top:2px dashed lightblue;
+  border-radius: 0 0 10px 0;
+  word-break: break-all;
+}
+.buttonRemove {
+  position:absolute;
+  top: 0px;
+  right:-70px;
+  color:red;
+  border-color: red;
+}
+.buttonRemove:hover{
+  background-color: red;
+  color:white
+}
+.buttonEdit {
+  position:absolute;
+  top: 25px;
+  right:-45px;
+  color:darkgreen;
+  padding:1px 8px 1px 8px;
+  border-color:darkgreen
+}
+
+.buttonEdit:hover{
+  background-color: green;
+  color:white;
+}
+
+.page-item, .page-link, .paginate, .nn {
+  color:white
+}
+.cont {
+  width:285px;
+  position:relative
+}
+
+.save {
+    position: relative;
+    bottom: 8px;
+    left:2px;
+    background-color: green;
+    color:white;
+    border-radius: 5px;
+    border:none;
+    height:25px;
+    width:50px
+  }
+  
+  .pagination li{
+  display:inline;
+  margin-left: 10px;
+}
+.page-link:focus {
+background-color:rgb(18, 168, 76)
+}
+.pagination {
+  position:absolute;
+  top:145px;
+  left:195px;
+}
+.paginate {
+  position: absolute;
+  top:162px;
+  left:149px
+}
+.wordCounterWrapper {
+  position: absolute;
+  left:500px;
+  top: 0px;
+  color:white
+}
+.pageSort {
+  visibility: visible;
+  width:100px
+}
+.page{
+  visibility: hidden;
+  width:100px
+}
+.span {
+  margin-top: 5px;
+ }
+.tagInput {
+  color:white
+}
+.tagInput input {
+  font-size: 16px;
+  margin-top: 5px;
+ }
+ .taglist{
+  margin-left: 50px;
+ }
+textarea:focus, input:focus {
+  outline:none
+}
+.sort {
+  color:white
+}
+.tag {
+  cursor:pointer
+}
+.show {
+  visibility:hidden;
+  position:absolute
+}
+
+@media (min-width:340px) and (max-width:480px) {
+  .wordCounterWrapper{
+    position:static
+  }
+  .wordcounter1 {
+    visibility:hidden
+  }
+  .wordcounter {
+    position:static;
+    margin-top:10px;
+    visibility: visible;
+   }
+  .show {
+    visibility:visible;
+    position:static;
+    color:white;
+    margin-left: 155px;
+  }
+ }
+ @media (min-width:481px) and (max-width:620px) {
+  .wordCounterWrapper{
+    position:static;
+    margin-top: 20px;
+  }
 }
