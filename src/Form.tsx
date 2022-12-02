@@ -18,19 +18,6 @@ type ItemType = {
     onEdit?:()=>void
 }
 
-type PostType = {
-    post:string;
-    search:string;
-    id?:string;
-    onRemove:()=>void;
-    onEdit:()=>void
-}
-type TagType = {
-    tag:string;
-    id?:string;
-    onEdit(f?:any|null):(f?:any|null)=>any|null
-}
-
 type PostListType = {
     items:ItemType[];
     search:string;
